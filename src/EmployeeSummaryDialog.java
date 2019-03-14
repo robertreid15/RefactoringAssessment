@@ -46,7 +46,6 @@ public class EmployeeSummaryDialog extends JDialog implements ActionListener {
 		setVisible(true);
 
 	}
-	// initialise container
 	public Container summaryPane() {
 		JPanel summaryDialog = new JPanel(new MigLayout());
 		JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT));
