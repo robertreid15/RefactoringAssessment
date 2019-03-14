@@ -86,11 +86,9 @@ public class EmployeeSummaryDialog extends JDialog implements ActionListener {
 		};
 
 		employeeTable = new JTable(tableModel);
-		// add header names to table
 		for (int i = 0; i < employeeTable.getColumnCount(); i++) {
 			employeeTable.getColumn(headerName[i]).setMinWidth(colWidth[i]);
 		}
-		// set alignments
 		employeeTable.getColumnModel().getColumn(0).setCellRenderer(leftRenderer);
 		employeeTable.getColumnModel().getColumn(4).setCellRenderer(centerRenderer);
 		employeeTable.getColumnModel().getColumn(6).setCellRenderer(new DecimalFormatRenderer());
@@ -117,7 +115,6 @@ public class EmployeeSummaryDialog extends JDialog implements ActionListener {
 		}
 
 	}
-	// format for salary column
 	static class DecimalFormatRenderer extends DefaultTableCellRenderer {
 		 private static final DecimalFormat format = new DecimalFormat(
 		 "\u20ac ###,###,##0.00" );
@@ -128,7 +125,6 @@ public class EmployeeSummaryDialog extends JDialog implements ActionListener {
 			Component c = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
 			 JLabel label = (JLabel) c;
 			 label.setHorizontalAlignment(JLabel.RIGHT);
-			 // format salary column
 			value = format.format((Number) value);
 
 			return super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
