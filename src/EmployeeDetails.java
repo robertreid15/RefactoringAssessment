@@ -654,9 +654,10 @@ public class EmployeeDetails extends JFrame implements ActionListener, ItemListe
 		}
 		if (!valid)
 			JOptionPane.showMessageDialog(null, "Wrong values or format! Please check!");
-		if (ppsField.isEditable())
-			setToWhite();
-
+		if (ppsField.isEditable()){
+			Colors bgColor = new Colors(ppsField,surnameField,firstNameField,salaryField,genderCombo,departmentCombo,fullTimeCombo);
+			bgColor.setToWhite2();
+		}
 		return valid;
 	}
 
