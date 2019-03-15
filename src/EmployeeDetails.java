@@ -1,11 +1,4 @@
 
-/* * 
- * This is a menu driven system that will allow users to define a data structure representing a collection of 
- * records that can be displayed both by means of a dialog that can be scrolled through and by means of a table
- * to give an overall view of the collection contents.
- * 
- * */
-
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
