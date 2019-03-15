@@ -500,6 +500,9 @@ public class EmployeeDetails extends JFrame implements ActionListener, ItemListe
 					nextRecord();
 					displayRecords(currentEmployee);
 				} 
+				else {
+					change = false;
+				}
 			} 
 		} 
 	}
