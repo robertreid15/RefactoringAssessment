@@ -500,6 +500,9 @@ public class EmployeeDetails extends JFrame implements ActionListener, ItemListe
 					nextRecord();
 					displayRecords(currentEmployee);
 				} 
+				else {
+					change = false;
+				}
 			} 
 		} 
 	}
@@ -857,7 +860,7 @@ public class EmployeeDetails extends JFrame implements ActionListener, ItemListe
 				displaySearchBySurnameDialog();
 			}
 			else if (e.getSource() == saveChange) {
-				;
+				saveChanges();
 			}
 			else if (e.getSource() == firstItem || e.getSource() == first) {
 				firstRecord();
