@@ -724,6 +724,7 @@ public class EmployeeDetails extends JFrame implements ActionListener, ItemListe
 						JOptionPane.YES_NO_OPTION, JOptionPane.INFORMATION_MESSAGE, null, null, null);
 				if (returnVal == JOptionPane.YES_OPTION) {
 					if (!idField.getText().equals("")) {
+						salaryField.setText(fieldFormat.format(currentEmployee.getSalary()));
 						application.openWriteFile(file.getAbsolutePath());
 						currentEmployee = getChangedDetails();
 						application.changeRecords(currentEmployee, currentByteStart);
