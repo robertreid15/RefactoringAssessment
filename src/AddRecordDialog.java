@@ -49,7 +49,7 @@ public class AddRecordDialog extends JDialog implements ActionListener {
 
 		empDetails.setBorder(BorderFactory.createTitledBorder("Employee Details"));
 
-		empDetails.add(new JLabel("ID:"), "growx, pushx");
+		empDetails.add(new JLabel("ID:"), ManageLayout.migLayout1);
 		empDetails.add(idField = new JTextField(20), ManageLayout.migLayout2);
 		idField.setEditable(false);
 		
